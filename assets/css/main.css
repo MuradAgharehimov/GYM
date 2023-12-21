@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.collapse ul {
+  display: flex;
+  gap: 12px;
+}
+.collapse ul li a {
+  padding: 0 8px 0px 8px;
+  text-decoration: none;
+  display: inline-block;
+  color: #222;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+#real {
+  width: 100%;
+  color: white;
+  height: auto;
+  min-height: 700px;
+  background-image: url(/assets/img/header-bg.jpg);
+  background-size: cover;
+}
+#real .text_real {
+  width: 100%;
+  height: auto;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#real .text_real h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1em;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  #real .text_real h1 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 500px) {
+  #real .text_real h1 {
+    font-size: 35px;
+  }
+  #real .text_real p {
+    font-size: 13px;
+  }
+}
+#basketx {
+  width: 100%;
+  height: auto;
+  min-height: 800px;
+}
+#basketx .basket_res {
+  width: 100%;
+  height: auto;
+  min-height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#basketx .basket_res .about_text {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#basketx .basket_res .about_text h1 {
+  font-family: "Poppins", sans-serif;
+  color: #222222;
+  line-height: 1.2em !important;
+  margin-bottom: 20;
+  margin-top: 0;
+  font-weight: 600;
+}
+#basketx .basket_res .about_text p {
+  color: #777777;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.625em;
+}
+
+@media (max-width: 768px) {
+  #basketx .basket_res .about_text h1 {
+    font-size: 28px;
+  }
+  #basketx .basket_res .about_text p {
+    font-size: 13px;
+  }
+}
+#productsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: auto;
+}
+
+.boxDiv {
+  width: calc(33.33% - 20px);
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin: auto;
+}
+.boxDiv .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.boxDiv img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.boxDiv button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.boxDiv button:hover {
+  background-color: #2980b9;
+}
+
+@media (min-width: 500px) {
+  .boxDiv {
+    width: calc(50% - 20px);
+  }
+}
+@media (max-width: 568px) {
+  .boxDiv {
+    width: calc(100% - 20px);
+  }
+}
+@media (min-width: 1000px) {
+  .boxDiv {
+    width: calc(33% - 20px);
+  }
+}
+#pagi {
+  background-color: red;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  margin: auto;
+}
+#pagi:hover {
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.traiden {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.productx {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#topCourses {
+  min-height: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#topCourses .top-courses-text {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#topCourses .top-courses-text h1 {
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 700;
+  color: #222;
+}
+#topCourses .top-courses-text p {
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 300;
+  color: #777;
+}
+#topCourses .course-available {
+  position: relative;
+}
+#topCourses .course-available img {
+  width: 100%;
+}
+#topCourses .course-available .course-available-text {
+  position: absolute;
+  background-color: #f6214b;
+  left: 20px;
+  bottom: 70px;
+  height: 41px;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#topCourses .course-available .course-available-text p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: 10px;
+  color: white;
+  font-size: 15px;
+  line-height: 23px;
+}
+#topCourses .course-available .running {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+  cursor: pointer;
+}
+#topCourses .course-available .running h4 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #222;
+}
+#topCourses .course-available .running p {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #f6214b;
+}
+
+#gym_son {
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  background-image: url(/assets/img/callto-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#gym_son .container .text_gymx {
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+#gym_son .container .text_gymx h1 {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.2em !important;
+  font-weight: 600;
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  #gym_son .container .text_gymx h1 {
+    font-size: 36px;
+  }
+}
+#gym_son .container .text_gymx p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.625em;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #gym_son .container .text_gymx p {
+    width: 63%;
+  }
+}
+#gym_son .container .text_gymx a {
+  color: white;
+  width: 200px;
+  padding: 10px;
+  background-color: #F6214B;
+  border-radius: 30px;
+  margin-top: 15px;
+  text-decoration: none;
+}
+#gym_son .container .text_gymx a:hover {
+  outline: 0;
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  min-height: 150px;
+}
+footer .text_footer {
+  width: 100%;
+  height: auto;
+  min-height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .text_footer p {
+  text-align: center;
+  font-size: 17px;
+}
+footer .text_footer .footer-social {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1000px) {
+  footer .text_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
